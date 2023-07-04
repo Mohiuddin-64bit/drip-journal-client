@@ -5,7 +5,7 @@ const Admin = () => {
   const [information, setInformation] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/allInformation")
+      .get("https://drip-journal-server.vercel.app/allInformation")
       .then((res) => {
         setInformation(res.data);
       })

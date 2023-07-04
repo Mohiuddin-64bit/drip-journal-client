@@ -18,7 +18,7 @@ const Body = () => {
 
     // Make the POST request to the server
     axios
-      .post("http://localhost:5000/information", data)
+      .post("https://drip-journal-server.vercel.app/information", data)
       .then((res) => {
         if(res.data.insertedId){
           Swal.fire(
